@@ -1,4 +1,4 @@
-    var pT=[];
+     var pT=[];
     var fT=[];
         var eId=document.getElementById("id").value
         eId=1;
@@ -158,7 +158,6 @@
             let newSalary =prompt("Enter the new Salary")
             pT[value].salary=newSalary
             pEmp()
-            redepartP()
         }
         redepartP()
         // function to change department for Part time emp 
@@ -207,7 +206,6 @@
             let newSalary =prompt("Enter the new Salary")
             fT[value].salary=newSalary
             fEmp()
-            redepartF()
         }
         redepartF()
         // function to change department for full time emp 
@@ -255,14 +253,7 @@
                 }
             })
 
-            document.getElementById("salary").addEventListener('blur',()=>{
-                let value=document.getElementById("salary").value
-                const cSalary=/^([0-9]){5-15}$/
-                if(cSalary.test(value)){
-                    document.getElementById("salary").style.borderColor="green"
-                }
-                else{
-                    alert("Salary length must be grater than 5 and less than 15")
-                }
-            })
+            
+
+
 
