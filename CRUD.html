@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script async src="script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Employee DataBase</h1>
+        <div id="container">
+         <label for="id"><b>Id:- </label><input type="text" size="1" disabled value="1" id="id" ><input type="text" placeholder="Name" id="name" required><input type="number" placeholder="Salary" id="salary" required><select name="department" id="depart">
+        <option value="">Department</option>
+        <option value="Java Devloper">Java Devloper</option>
+        <option value="node.JS Devloper">node.JS Devloper</option>
+        <option value="Dotnet Devloper">DotNet Devloper</option>
+        <option value="C# Devloper">C# Devloper</option>
+    </select>
+    <input type="radio"  name="type" id="pTime" value="Part Time"><label for="pTime">Part Time</label><input type="radio" id="fTime" name="type" value="Full Time"><label for="fTime"> Full Time</label><br><br>
+    <button id="Add" onclick="addEmp()">Add</button><button onclick="pEmp()">Part Time</button><button onclick="fEmp()">Full Time</button><button id="data" onclick="allEmp()">Full Data</button><br><br>
+    <label for="input2" > Please Enter Employee name or Department </label><input type="text" id="input2" onkeyup="filter()" placeholder=" Search">
+
+</div><br>
+<p id="msg"></p>
+<p id="msg2"></p>
+<p id="warn"></p>
+</div></center> 
+
+
+</body>
+</html>
